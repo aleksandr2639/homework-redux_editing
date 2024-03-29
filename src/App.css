@@ -1,0 +1,125 @@
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+label p {
+  padding: 10px 0;
+  text-align: center;
+  color: #000000;
+}
+
+input {
+  width: 195px;
+  height: 40px;
+  margin-right: 25px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 8px 8px 20px 1px #00000033;
+}
+
+.buttons {
+  height: 40px;
+  padding: 10px 35px;
+  align-self: flex-end;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-save {
+  background-color: #57b28c;
+}
+
+.btn-cancel {
+  background-color: #c96464;
+}
+
+.list_header {
+  display: flex;
+  justify-content: space-around;
+  padding: 45px 0 10px 0;
+}
+
+.list {
+  width: 500px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px 40px;
+}
+
+.list_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.list_item:last-child {
+  margin-bottom: 0;
+}
+
+.list_wrapper {
+  width: 145px;
+}
+
+.btn {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_edit {
+  background-image: url("./assets/edit.png");
+  margin-right: 18px;
+}
+
+.btn_remove {
+  background-image: url("./assets/close.png");
+}
