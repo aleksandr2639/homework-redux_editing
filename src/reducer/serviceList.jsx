@@ -12,7 +12,7 @@ const reducerList = (state = initialState, action) => {
   switch (action.type) {
     case ADD_LIST: {
       const { name, price } = action.payload;
-      return [...state, { id: Date.now(), name, price: Number(price) }];
+      return [...state, { id: uuidv4(), name, price: Number(price) }];
     }
     case REMOVE_LIST: {
       const { id } = action.payload;

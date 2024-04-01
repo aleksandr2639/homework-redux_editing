@@ -5,15 +5,10 @@ import {
   editList,
   clearField,
 } from "../actions/actionCreators";
-import { useEffect } from "react";
 
 const ServiceAdd = () => {
   const item = useSelector((state) => state.serviceAdd);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    console.log(item);
-  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,6 +38,7 @@ const ServiceAdd = () => {
         <input
           name="name"
           className="work"
+          type="text"
           value={item.name}
           onChange={handleChange}
           required={true}
@@ -52,6 +48,7 @@ const ServiceAdd = () => {
         <p>Price</p>
         <input
           name="price"
+          type="number"
           className="count"
           value={item.price}
           onChange={handleChange}

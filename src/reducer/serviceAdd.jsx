@@ -4,6 +4,7 @@ import {
   EDIT_FIELD_LIST,
   CHANGE_FIELD,
   CLEAR_FIELD,
+  REMOVE_LIST,
 } from "../actions/actionTypes";
 
 const initialState = { name: "", price: "" };
@@ -17,9 +18,10 @@ const reducerForm = (state = initialState, action) => {
     case EDIT_FIELD_LIST: {
       return action.payload;
     }
-    case ADD_LIST:
+    case REMOVE_LIST:
     case EDIT_LIST:
-    case CLEAR_FIELD: {
+    case CLEAR_FIELD:
+    case ADD_LIST: {
       return initialState;
     }
     default:
